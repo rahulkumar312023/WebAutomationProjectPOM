@@ -1,15 +1,17 @@
 package pages;
 
-public class LogInPage {
+import org.openqa.selenium.By;
+
+public class LogInPage extends BasePage{
     public String loginPageURL = "https://www.saucedemo.com/v1/index.html";
 
     public String loginPageTitle = "Swag Labs";
 
-    public String usernameBox = "//input[@id='user-name']";
+    public By usernameBox = By.xpath("//input[@id='user-name']");
 
-    public String emailInputBox = "//input[@id='password']";
+    public By passwordInputBox = By.xpath("//input[@id='password']");
 
-    public String errorMsg = "//h3[normalize-space()='Epic sadface: Username is required']";
+    public By errorMsg = By.xpath("//h3[normalize-space()='Epic sadface: Username is required']");
 
-    public String loginButton = "//input[@id='login-button']";
+    public By loginButton = By.xpath("//input[@id='login-button']");
 }
